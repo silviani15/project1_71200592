@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!-- activity_product_selection.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProductSelectionActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Product 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Barang 1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/angkabrg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Product 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Barang 2"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/angkabrg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Product 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Barang 3"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/angkabrg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Promo Text -->
+    <TextView
+        android:id="@+id/promo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promo: Beli minimal 5 item dapat diskon 20%"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
